@@ -1,0 +1,205 @@
+/* Common Styles for SignIn and TodoForm */
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                url('https://assets.nflxext.com/ffe/siteui/vlv3/f9f79b9d-0984-4a5e-90b7-f1e6fc197e64/1a6c1999-709e-4e20-b649-9a58f5c2d95e/KR-ko-20230724-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container h1,
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.form-group textarea,
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="date"] {
+    width: calc(100% - 22px); /* Adjust width for input padding */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+.btn {
+    width: calc(100% - 22px); /* Adjust width for button padding */
+    padding: 10px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f40612;
+}
+
+.help-text {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.help-text a {
+    color: #fff;
+}
+
+.help-text a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Styles specific to SignIn.jsp */
+/* //signIn */
+.signIn-container {
+    max-width: 350px;
+}
+
+.signIn-container .btn {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.signIn-container input[type="text"],
+.signIn-container input[type="password"] {
+    width: calc(100% - 22px); /* Adjust width for input padding */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Styles specific to TodoForm.jsp */
+/* //todoForm */
+.todoForm-container {
+    max-width: 500px;
+}
+
+.todoForm-container .btn {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.todoForm-container textarea {
+    height: 120px;
+}
+
+.todoForm-container .form-group input[type="date"] {
+    font-size: 16px;
+    width: 180px;
+}
+
+.todoForm-container .form-group input[type="checkbox"] {
+    margin-right: 10px; /* Adjust margin for checkbox alignment */
+    vertical-align: middle;
+}
+
+/* Styles specific to List.jsp */
+/* //list */
+.list-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.list-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-container a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.list-container th,
+.list-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.list-container th {
+    background-color: #333;
+    color: #fff;
+}
+
+.list-container td a {
+    color: #333;
+    text-decoration: none;
+}
+
+.list-container td a:hover {
+    text-decoration: underline;
+}
+
+.list-container .empty-message {
+    color: #fff;
+    margin-top: 20px;
+}
