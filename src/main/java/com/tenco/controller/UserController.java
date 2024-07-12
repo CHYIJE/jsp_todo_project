@@ -42,7 +42,7 @@ public class UserController extends HttpServlet {
 		switch (action) {
 		case "/signIn":
 			// 로그인 페이지로 보내는 동작처리
-			request.getRequestDispatcher("/WEB-INF/views/signIn.jsp").forward(request, response);
+			request.getRequestDispatcher("/WEB-INF/views/signIn2.jsp").forward(request, response);
 			break;
 		case "/signUp":
 			// 회원 가입으로 보내는 동작 처리
